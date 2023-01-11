@@ -3,7 +3,7 @@ import {add} from "../../redux/actions/inputValCreators"
 import React from "react";
 import {useState} from "react";
 
-function InputChange() {
+function InputChanges() {
     const [inputValue,setInputValue] = useState('');
     const dispatch = useDispatch();
 
@@ -21,4 +21,4 @@ function InputChange() {
         </form>
     </>
 }
-export default InputChange;
+export default InputChanges;

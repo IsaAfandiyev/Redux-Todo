@@ -1,13 +1,12 @@
 import InputChange from "./Components/input";
 import {Link, Route, Routes} from "react-router-dom";
-import input from "../src/Components/input"
+import InputChanges from "../src/Components/input/index";
 import TodoList from "./Components/TodoList";
 
 
 function App() {
   return (
     <div className="App">
-      <div className="App">
         <nav>
           <ul>
             <li>
@@ -20,12 +19,11 @@ function App() {
         </nav>
         <main>
           <Routes>
-            <Route path="/todoList" element={<input />} />
+            <Route path="/" element={<InputChange />} />
             <Route path="/todoList" element={<TodoList />} />
           </Routes>
         </main>
       </div>
-    </div>
   );
 }
 
