@@ -1,14 +1,14 @@
 import {ADD,DELETE} from "./inputVal.actions";
 
-export const add = () => {
+export const add = (item) => {
     return {
         type:ADD,
-        payload:''
+        payload:item,
     }
 }
-export const del = () => {
+export const del = (item) => {
     return {
         type:DELETE,
-        payload:''
+        payload:item,
     }
 }
